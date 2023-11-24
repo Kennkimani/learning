@@ -11,6 +11,7 @@ from src.logger import logging
 from src.exception import CustomException
 import os
 from src.utils import save_object
+from scipy.sparse import hstack
 
 @dataclass
 class DataTransformationConfig:
@@ -102,17 +103,16 @@ class DataTransformation:
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
             print("Shape of input_feature_train_arr:", input_feature_train_arr.shape)
-            print("Shape of target_feature_train_df:", np.array(target_feature_train_df).shape)
+            print("Shape of target_feature_train_df:", target_feature_train_df.shape)
             print("Shape of input_feature_test_arr:", input_feature_test_arr.shape)
-            print("Shape of target_feature_test_df:", np.array(target_feature_test_df).shape)
-            target_feature_train_arr = np.array(target_feature_train_df).reshape(-1, 1)
-            target_feature_test_arr= np.array(target_feature_test_df).reshape(-1, 1)
+            print("Shape of target_feature_test_df:", (target_feature_test_df).shape)
+            target_feature_train_arr =target_feature_train_df
+            target_feature_test_arr=target_feature_test_df
 
-            train_arr = np.hstack([
-                input_feature_train_arr, np.array(target_feature_train_df)
+            train_arr = hstack([
+                input_feature_train_arr,np.array(target_feature_train_df).reshape(-1,1)
             ])
-            test_arr = np.hstack([input_feature_test_arr, np.array(target_feature_test_df)])
-
+            test_arr = hstack([input_feature_test_arr,np.array(target_feature_test_df).reshape(-1,1)])
             logging.info(f"Saved preprocessing object.")
 
             save_object(

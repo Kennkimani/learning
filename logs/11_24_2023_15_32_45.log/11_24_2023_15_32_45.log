@@ -1,0 +1,12 @@
+[ 2023-11-24 15:32:45,642 ] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[ 2023-11-24 15:32:49,639 ] 27 root - INFO - entered the data ingestion method
+[ 2023-11-24 15:32:49,688 ] 32 root - INFO - read data set
+[ 2023-11-24 15:32:49,768 ] 36 root - INFO - train test split initiated
+[ 2023-11-24 15:32:49,867 ] 42 root - INFO - Ingestion of the data is completed
+[ 2023-11-24 15:32:49,927 ] 75 root - INFO - Read train and test data completed
+[ 2023-11-24 15:32:49,927 ] 77 root - INFO - Obtaining preprocessing object
+[ 2023-11-24 15:32:49,927 ] 51 root - INFO - Categorical columns: ['MSSubClass', 'MSZoning', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'MoSold', 'YrSold', 'SaleType', 'SaleCondition']
+[ 2023-11-24 15:32:49,927 ] 52 root - INFO - Numerical columns: ['LotFrontage', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', 'BsmtFullBath', 'BsmtHalfBath', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'Id', 'LotArea', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal']
+[ 2023-11-24 15:32:49,939 ] 98 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[ 2023-11-24 15:32:50,074 ] 116 root - INFO - Saved preprocessing object.
+[ 2023-11-24 15:32:50,084 ] 33 root - INFO - Split training and test input data

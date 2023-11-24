@@ -1,0 +1,13 @@
+[ 2023-11-24 16:21:58,983 ] 160 numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+[ 2023-11-24 16:22:03,007 ] 27 root - INFO - entered the data ingestion method
+[ 2023-11-24 16:22:03,056 ] 32 root - INFO - read data set
+[ 2023-11-24 16:22:03,139 ] 36 root - INFO - train test split initiated
+[ 2023-11-24 16:22:03,245 ] 42 root - INFO - Ingestion of the data is completed
+[ 2023-11-24 16:22:03,300 ] 76 root - INFO - Read train and test data completed
+[ 2023-11-24 16:22:03,300 ] 78 root - INFO - Obtaining preprocessing object
+[ 2023-11-24 16:22:03,300 ] 52 root - INFO - Categorical columns: ['MSSubClass', 'MSZoning', 'Street', 'Alley', 'LotShape', 'LandContour', 'Utilities', 'LotConfig', 'LandSlope', 'Neighborhood', 'Condition1', 'Condition2', 'BldgType', 'HouseStyle', 'OverallQual', 'OverallCond', 'YearBuilt', 'YearRemodAdd', 'RoofStyle', 'RoofMatl', 'Exterior1st', 'Exterior2nd', 'MasVnrType', 'ExterQual', 'ExterCond', 'Foundation', 'BsmtQual', 'BsmtCond', 'BsmtExposure', 'BsmtFinType1', 'BsmtFinType2', 'Heating', 'HeatingQC', 'CentralAir', 'Electrical', 'KitchenQual', 'Functional', 'FireplaceQu', 'GarageType', 'GarageFinish', 'GarageQual', 'GarageCond', 'PavedDrive', 'PoolQC', 'Fence', 'MiscFeature', 'MoSold', 'YrSold', 'SaleType', 'SaleCondition']
+[ 2023-11-24 16:22:03,301 ] 53 root - INFO - Numerical columns: ['LotFrontage', 'MasVnrArea', 'BsmtFinSF1', 'BsmtFinSF2', 'BsmtUnfSF', 'TotalBsmtSF', 'BsmtFullBath', 'BsmtHalfBath', 'GarageYrBlt', 'GarageCars', 'GarageArea', 'Id', 'LotArea', '1stFlrSF', '2ndFlrSF', 'LowQualFinSF', 'GrLivArea', 'FullBath', 'HalfBath', 'BedroomAbvGr', 'KitchenAbvGr', 'TotRmsAbvGrd', 'Fireplaces', 'WoodDeckSF', 'OpenPorchSF', 'EnclosedPorch', '3SsnPorch', 'ScreenPorch', 'PoolArea', 'MiscVal']
+[ 2023-11-24 16:22:03,313 ] 99 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[ 2023-11-24 16:22:03,441 ] 116 root - INFO - Saved preprocessing object.
+[ 2023-11-24 16:22:03,451 ] 33 root - INFO - Split training and test input data
+[ 2023-11-24 16:40:04,015 ] 109 root - INFO - Best found model on both training and testing dataset
